@@ -20,12 +20,11 @@
  */
 
 (function (log) {
+    "use strict";
 
     var levels = ['trace', 'debug', 'info', 'warn', 'error', 'silent'];
 
-    log.levels = levels;    // Public list of available levels
-
-    log.list = [];          // Public list of loggers, use log.loggers() to inspect current levels
+    log.list = [];  // Public list of loggers, use log.loggers() to inspect current levels
 
     // Register all new loggers in public list
     var original  = log.getLogger;
@@ -80,6 +79,11 @@
             log.getLogger(name).setLevel(level);
             verbose(name, level);
         })
+    };
+
+    // Return array with available levels
+    log.getLevels = function() {
+        return levels;
     };
 
     // Scoped method to display changes via default logger
