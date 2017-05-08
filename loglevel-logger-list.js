@@ -30,10 +30,9 @@
     // Register all new loggers in public list
     var original  = log.getLogger;
     log.getLogger = function (name) {
+        
         // Add logger to public list if not in list yet.
-
         if (log.list.indexOf(name) === -1) {
-            // Set specified level for all loggers in public list
             log.list.push(name);
         }
         return original(name);
