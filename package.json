@@ -1,0 +1,25 @@
+{
+  "name": "loglevel-logger-list",
+  "version": "1.0.0",
+  "description": "Custom plugin for loglevel for handling loggers list.",
+  "main": "loglevel-logger-list.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maynagashev/loglevel-logger-list.git"
+  },
+  "keywords": [
+    "loglevel",
+    "loglevel-plugin",
+    "logger",
+    "loglevel-logger-list"
+  ],
+  "author": "maynagashev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maynagashev/loglevel-logger-list/issues"
+  },
+  "homepage": "https://github.com/maynagashev/loglevel-logger-list#readme"
+}
