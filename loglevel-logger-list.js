@@ -11,10 +11,10 @@
  *      log.set(name, level)            - set level for specified logger, also can pass an array of logger names
  *      log.except(exceptName, level)   - set level for all, except specified, also can pass an array of excepted names
  *      log.loggers()                   - show list of registered loggers with current level value
+ *      log.getLevels()                 - get available levels array
  *
  * New Props:
  *      log.list                        - array of registered loggers
- *      log.levels                      - available levels array
  *
  * Note: all helpers affect only custom loggers in list, and doesn't affect default logger.
  */
