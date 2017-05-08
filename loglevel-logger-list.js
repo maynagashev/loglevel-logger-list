@@ -7,14 +7,14 @@
  * Rewrites original method getLogger, adds hook for auto-registering new loggers in public list.
  *
  * Also helper methods added:
- *      log.all(level)
+ *      log.all(level)                  - set specified level for all custom loggers
  *      log.set(name, level)            - also can pass an array of names
  *      log.except(exceptName, level)   - set level for all, except specified, also can pass an array of excepted names
  *      log.loggers()                   - show list of registered loggers with current level value
  *
  * New Props:
- *      log.list
- *      log.levels
+ *      log.list                        - array of registered loggers
+ *      log.levels                      - available levels array
  *
  * Note: all helpers affect only custom loggers in list, and doesn't affect default logger.
  */
