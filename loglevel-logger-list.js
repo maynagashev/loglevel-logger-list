@@ -8,7 +8,7 @@
  *
  * Also helper methods added:
  *      log.all(level)                  - set specified level for all custom loggers
- *      log.set(name, level)            - also can pass an array of names
+ *      log.set(name, level)            - set level for specified logger, also can pass an array of logger names
  *      log.except(exceptName, level)   - set level for all, except specified, also can pass an array of excepted names
  *      log.loggers()                   - show list of registered loggers with current level value
  *
@@ -30,7 +30,7 @@
     // Register all new loggers in public list
     var original  = log.getLogger;
     log.getLogger = function (name) {
-        
+
         // Add logger to public list if not in list yet.
         if (log.list.indexOf(name) === -1) {
             log.list.push(name);
